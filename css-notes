@@ -1,0 +1,62 @@
+hyper text reference 
+by clicking we have to go for another web page for that purpose we are using anchor tag <a href="here we have give the link towhich we want to go i.e.,url"target="_blank"></a>
+if we want to open in new tab we want to give target=_blank
+cascading style sheets
+internal we are giving the things in same line itself
+property:value
+color:value
+in internal we are using style tag and inside that we are saying for which we want the change
+in css if we give inline and internal the inline takse more priority
+*is used as universal selector
+<div>it represent division,it will divide</div>
+there are generally 3 types of css 
+inline
+internal
+external 
+inline example<tagname=property:value>
+    eg:<h1 style="background-color: pink;">this is the heading tag with color pink</h1>
+    <p style="color:blue">this is the para</p>
+INTERNAL example inside the head tag open style tag and write the tag name after that use parenthesis
+example:
+<head>
+    <style>
+        h1{
+            color:red;
+            text-align:center
+        }
+    </style>
+</head>
+In external css we need to create an extenal css file without any necessary tag we need only the modifications for which we need the tag properties
+h1{
+    color:red;
+    text-align:center
+}then in the main file we need to <link rel="stylesheet" href="here we need to give the saved file name"> then we need to link it
+SELECTORS
+The selectors will help you to select items accordingly 
+if we want to select all item in a paragraph then we need to say p{
+
+} 
+Then only if we need the particular items then we have to give the id name
+#idname{
+
+}
+example<p id="para">here only the item inside this will be affected as we gave the id name</p>
+.Dot will say the class name which is to be modified
+<p class="center">here if we put dot center then only this particular para will be affected</p>
+.center here the center class is modified
+if we dont want all the center class then we can modify it using the tag name.class name
+if we give the class name with two names then if we call using any one of the name then it will ALSo be modified
+ * this will be applicable to  all the tags inside the body tagname 
+if we want to give same modification to all tag such as h1,h2,p then we can write it as
+h1,h2,p{
+    
+}
+
+in <div></div> tag if we create 2 div tag if the outer div size will be reflect in the innner div also
+padding is the space between the border and content
+space between two box i.e between two content of the border is known as margin
+<input placeholder="">is used to create a search box
+display block it takes full width I.e it takes one line and nothing comes inside and outside
+if it is inline it takes only upto the written element size
+inline block we can set the size and width and it can starts with the line itself
+the div tag by default does not have the height and width so we have to set the height and width

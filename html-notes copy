@@ -1,0 +1,39 @@
+hyper text mark up language
+mark up -design and display purpose
+website la first page ku index . html nu savepananum bcz athutha first open aagum and we can see the thing which is opened as a home page 
+Doctype nu kudutha html la version 5 use pandro,
+comment line is <!-- here we can write what we want-->
+<br> this is used for indicating next line no need to use end tag for this br,where for <p> we have to use close tag</p>
+for printing horizontal line we can use <hr>
+<h1>Web Development</h1>
+<h2>FrontEnd Development</h2>
+<h3>--1.HTML</h3>
+<pre> </pre> this is used both for both spaces and line breaks    ,where if we want to display the address we cannot use the line break so we can use the tag <address></address>
+<tagname style="property:value;"> the style is used to add the colour and the size and other things
+<sub> subscript</sub> and <sup>superscript</sup></p>
+the tag has generally two types that is structural and symantic  in symantic the tags which is to be differ in their waycan be represented the symantic tags are of two types that is <strong>
+    the inside words are written in bold this will be used for blid people reading software and it is used in search engine for specific purpose
+</strong>
+<em>
+    it will written in italic this is used to emphasis
+</em>
+<q> it is used for quotes </q>
+<blockquote>this can be used for long quotes</blockquote>
+<strong>the content </strong>
+<mark></mark> element defines text that should be marked or highlighted
+<del> the inside word written here is strikeout and displayed and it says the value inside is older and it is not valid now </del>
+<ins> it is used for displaying this is now inserted ,the inside word will be marked underline </ins>
+<abbr title="this will display the defenition of the word which is abbreviated when you move yourmouse over it"></abbr>
+<dfn>defenition will be displayed and it written in italics and it starts with some space</dfn>
+<cite>reference things can be used and it will written in italics</cite>
+<style title="background-color:red"></style>
+
+list is are of two types that is 
+*ordered list it will display in 1,2,...
+and if we want to display in roman letter we want to say using attribute "type" i.e type="i" <oltype="i"></ol>
+and we can use the attribute start to display the thing which we want in the strating value we can write it as <ol start=""></ol><ol></ol> 
+*unordered list<ul></ul> it will display in bullet point
+*defenition list<dl>here we can give the heading which we define</dl>
+<dt>defenition term, that is the defenition which we define etha define pandro</dt>
+<dd>the real defenition ,define panunathoda defenition </dd>
+<hr>is used for horizontal line
