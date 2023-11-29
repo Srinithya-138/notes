@@ -60,3 +60,11 @@ display block it takes full width I.e it takes one line and nothing comes inside
 if it is inline it takes only upto the written element size
 inline block we can set the size and width and it can starts with the line itself
 the div tag by default does not have the height and width so we have to set the height and width
+padding and margin both are used to create space 
+if we want space between  border and content then we need padding
+if we want space between border and border then we need margin
+if we give display inline it takes the space  only upto the content
+if we give block then it takes a single line nothing will come before and after
+inline-block we can set margin and padding
+if we give display none the element will not be displayed and the space is also not reserved 
+if we give visibility hidden the element will not be displayed and the space is  reserved  
