@@ -68,3 +68,13 @@ if we give block then it takes a single line nothing will come before and after
 inline-block we can set margin and padding
 if we give display none the element will not be displayed and the space is also not reserved 
 if we give visibility hidden the element will not be displayed and the space is  reserved  
+By default in the web page it has some padding so we have to add the universal selector for padding and margin
+by taking the mouse on the letter if we want color change then we have to use hover
+l1:hover
+then if we want the cursor to be pointer then we have to put
+cursor:pointer
+if we put text-align center then inline element also changes to center
+em depends on the size and it can be used as parent and child
+rem(root em) 
+vh view port height
+vw view portwidth
