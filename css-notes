@@ -59,11 +59,38 @@ space between two box i.e between two content of the border is known as margin
 display block it takes full width I.e it takes one line and nothing comes inside and outside
 if it is inline it takes only upto the written element size
 inline block we can set the size and width and it can starts with the line itself
+visibility none element space is not reserved
+visibility hidden space is reserved
 the div tag by default does not have the height and width so we have to set the height and width
 padding and margin both are used to create space 
-if we want space between  border and content then we need padding
-if we want space between border and border then we need margin
-if we give display inline it takes the space  only upto the content
+if we want space between  border and content then we need padding and occurs inside border
+if we want space between border and border then we need margin and occurs outside the border
+//border-border :margin
+there is also another property outline
+//which adds border outline
+border:1px solid black;
+outline-style:5px solid dotted;
+outline offset
+//used to add space between border and outline the space betweenthe element is transparent
+text decoration
+//overline this add line above the text
+//underline
+//line-through through the text
+//overline underline both property of overline and underline 
+text transformation
+//uppercase all in capital letter
+//lowercase all in small letter
+//capitalized starting words of each letter is capital
+//letter spacing is used to add space between character in a text and this can also be in minus
+letter-spacing:-2px;
+//text-shadow is used to give the shadow effect on the text
+text-shadow:1px 1px 1px black,0 0 25px blue;
+//font weight is used to add bold and normal
+font-variant :small caps
+//by default underline will come for link if we don't want it then we can give
+text-decoration:none;
+border-radius is used to add the smalldifference in the box small and round the corner in outer border edge
+if we give display inline it takes the space  only upto the content and by default margin does not take space in the bottom and top
 if we give block then it takes a single line nothing will come before and after
 inline-block we can set margin and padding
 if we give display none the element will not be displayed and the space is also not reserved 
@@ -74,7 +101,19 @@ l1:hover
 then if we want the cursor to be pointer then we have to put
 cursor:pointer
 if we put text-align center then inline element also changes to center
-em depends on the size and it can be used as parent and child
+absolute unit is px this is same
+//relative units
+%  is used to define a size relative to an element parent object
+em depends on the text size and it can be used for parent and child and the font size is multipluied by child  2em(2*font size of parent)
+//em can also used for width and it is said to be 5em(5*fontsize of parent)
 rem(root em) 
-vh view port height
+font size of root element
+vh view port height 
+//height:1vh we can see only 1 percent of  our browser height 
 vw view portwidth
+//position 
+static :default position (no effect on top ,right,left,z-index property)
+position:static;
+relative it can work for top,bottom etc
+absolute works for the parent 
+fixed 
