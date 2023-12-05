@@ -1,0 +1,7 @@
+background-size:cover is used to see the image on all the screen when the window size is smaller or larger
+(eg:phone screena and window screen)
+background-position:top this shows when we small the window size the top image should not differ it should be stable
+background-image:linear-gradient(here we can give the color to the background image)
+background-image:linear-gradient(to right,green,light)
+//this will show the colour difference from left to right
+
