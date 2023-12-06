@@ -1,0 +1,7 @@
+transition is used to make a change from one state to another state (effect)
+transition-property is used for the transition what we want (transition(change)in font-size,width..etc..)
+transition-duration :2s etc(how long)
+transition-timing-function:ease-in/ease-out/linear/steps..
+transition-delay:2s..
+Transition Shorthand
+property name|duration|timing function|delay

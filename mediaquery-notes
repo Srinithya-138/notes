@@ -1,0 +1,19 @@
+it helps to make our website more responsive (responsive means the way it shows when the screen is larger or smaller)
+@media (width:300){
+background color:green;
+}
+  if the width is 300 then the background color changes to green
+  @media (max-width:300){
+background color:green;
+}
+the colour of the div is green from 0 to 300
+
+and we can put for inbetween color changes
+@media (min-width:200) and (max-width:300){
+background color:orange;
+} 
+
+upto that only that color we want exceeding such value we want another color then we want pink color we can write as
+@media (min-width:300){
+background color:green;
+}

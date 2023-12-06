@@ -1,0 +1,28 @@
+To animate CSS element
+
+@keyframe myName{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+to use animation we need to use animation properties
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count:how many times
+animation-direction:reverse(to to from),alternate
+
+
+Animation Shorthand
+animation: myName |duration| timingfunction |delay| iterartion count| direction
+
+
+%in Animation
+from:0%
+to:100%
+
+for different animation purpose we can use inbetweeen percent

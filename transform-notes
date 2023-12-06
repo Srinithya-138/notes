@@ -1,0 +1,28 @@
+used to apply 2D & 3D transformation to an element
+*ROTATE
+transform:rotate(45deg);
+//it will not apply for the inside content apply only foe the box
+rotation is possible in x,y,z (in 3 direction)
+if we give rotate: x 180 deg
+then we could not see the box because we have to think about the 3D x axis about to rotate x it is not visible same will be apply for y also but 
+in z we can see the box then it will  be 180 degree rotated in the z direction
+ * scale: 
+ //whether bigger size or smaller size box
+ scale(1) samwe state
+ scale(2) 2 times bigger
+ scale(x,y)
+ how much we want the difference in x axis and y axis
+ scaleX(2)//width is twice
+ scaleY(2)height is twice
+ *translate:
+//graph in which direction it want to move
+  transform:translatex(200px)
+  //it move in positive direction of the X axis
+  -200 move in -ve side (i.e right to left)
+  translate in x and y direction 
+  //transform:translate(200px,100px)
+  (x,y)
+  *skew:
+  skew(30 deg)
+  two corner will go like stretching
+  

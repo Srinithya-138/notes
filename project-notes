@@ -4,7 +4,7 @@ background-position:top this shows when we small the window size the top image s
 background-image:linear-gradient(here we can give the color to the background image)
 background-image:linear-gradient(to right,green,light)
 //this will show the colour difference from left to right
-//clip path
+//clip path-cut 
 the path goes in left, right, right bottom, and bottom left->
 if we dont want any change we can use 0 0
 0->x and 0->y
