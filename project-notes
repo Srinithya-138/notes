@@ -8,4 +8,8 @@ background-image:linear-gradient(to right,green,light)
 the path goes in left, right, right bottom, and bottom left->
 if we dont want any change we can use 0 0
 0->x and 0->y
+pseudo class is given by
+:hover,:active etc..
+
+
  
