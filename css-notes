@@ -117,3 +117,4 @@ position:static;
 relative it can work for top,bottom etc
 absolute works for the parent 
 fixed 
+sticky
