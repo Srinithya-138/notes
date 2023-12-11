@@ -12,10 +12,13 @@ background-image:linear-gradient(to right,green,light)
 //clip path-cut 
 the path goes in left, right, right bottom, and bottom left->
 opacity 0 means we cannot see the color 
-if we dont want any change we can use 0 0
+if we dont want any change 
 0->x and 0->y
+in physical markup exception of  the class element ,if we want to style any other element we can use pseudo classes and it can be used to  changes with respect to state changes such as hover
+eg:anchor tag
 pseudo class is given by
-:hover,:active etc..
+:hover,:active,link,   etc..
+
 
 3pillars of writing html and css
 //responsive design - used to responsive on all devices such as computer and phone
