@@ -1,3 +1,8 @@
+box-sizing:border-box is used to give the correct width and height what we are giving without applying the default value 
+,and the content of the element shrink according to width and height what we give
+//the default value forbox-sizing is content-box which means it add the padding and width what we give and adjust according to display the content
+line height 1.7 means 1.7 times bigger than the predefined line height
+image is an inline element so we can put A container to position that image
 background-size:cover is used to see the image on all the screen when the window size is smaller or larger
 (eg:phone screena and window screen)
 background-position:top this shows when we small the window size the top image should not differ it should be stable
@@ -6,10 +11,15 @@ background-image:linear-gradient(to right,green,light)
 //this will show the colour difference from left to right
 //clip path-cut 
 the path goes in left, right, right bottom, and bottom left->
+opacity 0 means we cannot see the color 
 if we dont want any change we can use 0 0
 0->x and 0->y
 pseudo class is given by
 :hover,:active etc..
 
+3pillars of writing html and css
+//responsive design - used to responsive on all devices such as computer and phone
+//maintainable and scalable code - clen easy to underestand and reusable 
+//web performance -less htttp request,code,compress code and compress image
 
  
