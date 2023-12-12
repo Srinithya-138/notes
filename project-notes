@@ -9,7 +9,7 @@ background-position:top this shows when we small the window size the top image s
 background-image:linear-gradient(here we can give the color to the background image)
 background-image:linear-gradient(to right,green,light)
 //this will show the colour difference from left to right
-//clip path-cut 
+//clip path-it will  cut 
 the path goes in left, right, right bottom, and bottom left->
 opacity 0 means we cannot see the color 
 if we dont want any change 
@@ -24,5 +24,14 @@ pseudo class is given by
 //responsive design - used to responsive on all devices such as computer and phone
 //maintainable and scalable code - clen easy to underestand and reusable 
 //web performance -less htttp request,code,compress code and compress image
+clean,modular,reusable,ready for growth are the architecturue of CSS 
 
- 
+SASS ->css preprocessor that adds power and elegance to the basic language
+variables:reusable values such as colors,font-sizes,spacing
+nesting:nest selectors inside of one another,used to write less code
+operators:mathematical operation inside css
+partials and imports:to write css in different files and importing them all into 1 single files
+mixins:to write reusable pieces of css code
+ functions:
+extends:
+control directives:
