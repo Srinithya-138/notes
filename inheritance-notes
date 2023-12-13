@@ -1,0 +1,7 @@
+// inheritance is sharing the property of parent element  to its child element
+properties related to text are inherited
+font-family,size,color etc
+if there is no declared value for the child then only inheritance occur if the parent has anvalue
+inherit keyword forces inheritance on property
+initial keyword resets the property to its initial value
+ 

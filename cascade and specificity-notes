@@ -1,0 +1,7 @@
+CASCADE AND SPECIFICITY
+!important have high priority
+//specificity value is in the order of 
+1.inline
+2.IDs
+3.classes,pseudo-classes,attribute
+4.Element ,pseudo-elements

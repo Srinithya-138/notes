@@ -1,0 +1,56 @@
+algorithm that calculates boxes and determines the layout of these boxes,for each element in the render tree inorder to determine the final layout of the page
+>dimension of the boxes:the box model
+>box type:inline,block,inline-block
+positioning scheme:floats and positioning
+stacking contexts
+
+//box model
+content:text,image etc
+padding:area around the content inside the box(space between border and the content)
+border: goes around the padding and content
+margin:spaces between boxes and it is basically in the outside of the box
+eg:space between two element we can use the margin property
+fill area:include padding and border but not margin and this is the area that filled with background color and image 
+
+//heights and width in default box model
+if we doesnt specify the height and width the vfm uses the content of the box to determine its size
+total width =right border+right padding+specified width+left padding+left border
+total height=top border+top padding+ specified height +bottom padding+bottom border
+eg:height=0+20+100+20+0=140 px
+
+to reduce the above problem we are going for box-sizing
+if we set  our model to box-sizing :border box then the  height and width will be for our entire box including the padding and border not only for the content area
+this means the padding and border we specified will be in the  inner width of the content area, instead of adding them to the total height and width of an element
+now,
+total width is =specified width ,and the total height is =specified height
+
+//box types
+    BLOCK:is of 100% of parent's width ,vertically one after another
+the type of the box is always defined by the display property 
+the default value of the html element is display  block
+
+INLINE:occupies only to the content's space,no line breaks,width and height cannot be applied if we sepcify our display to be inline
+padding and margin only to horizontal(left and right)
+
+INLINE-BLOCK:occupies only to content's space and there will not be any of the line break 
+
+//positioning scheme:
+
+NORMAL FLOW: default positioning scheme
+not floated,not absolute positioned,elements laid out according to their source order
+
+//FLOATS: element is removed from normal flow,text and inline element will wrap around the floated element,the container will not adjust its height to the element
+//ABSOLUTE POSITIONING: element is removed from the normal flow 
+//STACKING CONTEXTS:
+Z-INDEX the index value which is higher will appear at infront and lower is in the bottom
+Component driven design
+modular buildingblock that make up interfaces,held together by the layout of the page,reusable across a project and between differenet projects,independent 
+
+
+BEM:Block Element Modifier
+block:IS A standalone component that is meaningful on its own
+ELEMENT:part of block that has no meaning of its own
+MODIFIER:a different version of a block or an element
+
+ARCHITECT:THE 7-1 PATTERN
+7 different folders for partial Sass files and 1 main Sass file to import all other files into a compiled CSS style sheet

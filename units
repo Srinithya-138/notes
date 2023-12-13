@@ -1,0 +1,12 @@
+//all property has default value if nothing declared
+default font-size is:16px
+% are relative value converted to pixels(x*parent's computed font-size)
+% are measuered relative to parent's font size if the font-size is specified or else it is taken as 16
+% are measuered relative to parent's width if used to specify length(x*parent's computed width)
+//font-size
+em is measured to their parent's font size if the font-size is specified or else it is taken as 16 (x*parent's computed font-size)
+em is measured to their current font size if  specify length (x*current element computed font-size)
+rem is always measured relative to document's root font-size (x*root of computed font-size)
+vh and vw are percentage measurements of the viewport's height and width
+90vh______ x*1% of viewport  height ------> 90% of the current viewport height
+80vw______ x*1% of viewport  width ------> 80% of the current viewport width

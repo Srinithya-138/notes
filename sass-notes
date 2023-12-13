@@ -1,0 +1,10 @@
+SASS ->css preprocessor that adds power and elegance to the basic language
+SASS code is given to sass compiler and then we gert a compiled css code
+variables:reusable values such as colors,font-sizes,spacing
+nesting:nest selectors inside of one another,used to write less code
+operators:mathematical operation inside css
+partials and imports:to write css in different files and importing them all into 1 single files
+mixins:to write reusable pieces of css code
+ functions:similar to mixin but they produce a value which can be used
+extends:to make different selectors inherit declarations that are common to all of them
+control directives:for writing complex codes using complex code using conditionals and loops
