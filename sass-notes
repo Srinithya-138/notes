@@ -1,10 +1,126 @@
 SASS ->css preprocessor that adds power and elegance to the basic language
 SASS code is given to sass compiler and then we gert a compiled css code
 variables:reusable values such as colors,font-sizes,spacing
+$color:grey;//declaration
+how it is used
+background-color:$color
 nesting:nest selectors inside of one another,used to write less code
+if we declare a code  like this
+<nav>
+<ul class=navigation>
+<li><a href="#">about us</a></li>
+<li><a href="#">pricing</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<div class="button>
+<a class="btn-main" href="#">sign up</a>
+<a class="btn-hot" href="#">get a quote</a>
+</div>
+</nav>
+then we can write the nesting like this
+$color-primary:grey;
+$color-secondary:blue;
+nav{
+margin:30px;
+background-color:$color-primary;
+}
+in css if we want to change the list values then we will write like 
+.navigation{
+    list-style:none;
+}
+.navigation li{
+display:inline-block;
+} 
+.navigation li:first-child{  
+        margin:0;
+    }
+but in sass it can be written as
+.navigation{
+    list-style:none;
+
+    li{
+      display:inline-block;  
+
+      &:first-child{   //.navigation li:first-child can be written inside navigation li and that can be replaced with & symbol
+        margin:0;
+    }
+    a{
+       text-decoration:none;
+       text-transform:uppercase;            //.navigation li a {}
+    }
+    }
+    
+}
 operators:mathematical operation inside css
 partials and imports:to write css in different files and importing them all into 1 single files
 mixins:to write reusable pieces of css code
  functions:similar to mixin but they produce a value which can be used
 extends:to make different selectors inherit declarations that are common to all of them
 control directives:for writing complex codes using complex code using conditionals and loops
+
+mixins are nothing but if we write the same code inside the nesting we can use mixins 
+$color-primary:grey;
+
+@mixin style-link-text{
+    text-decoration:none;
+    text-transform:uppercase;
+    background-color:$color-primary;   //here we have set the color to grey if we use the mixin for <a> and another tag the grey color will be applied to reduce that we are passing a argument i.e @mixin style-link-texy($col){
+        text-decoration:none;
+    text-transform:uppercase;
+    background-color:$col;  
+
+    }
+}
+nav{
+margin:30px;
+background-color:$color-primary;
+}
+.navigation{
+    list-style:none;
+
+    li{
+      display:inline-block;  
+
+      &:first-child{  
+        margin:0;
+    }
+    a{
+       //text-decoration:none;
+       //text-transform:uppercase;            //.navigation li a {}
+       //background-color:$color-primary;   
+
+       the above place we can write as(@include style-link-text)
+       if we want to change the value of mixin then we can write as @include style-link-text (variable name ) //@include style-link-text ($color-secondary)
+    }
+    }
+    
+}
+
+and to write 30px we can write as 60/2 =30 in code it can be written as
+@function divide($a, $b){
+    @return $a/$b; //if we simply say the browser doesn't know what is 30 whether it is px or % 
+}
+margin:divide(30,2)
+so we can write as,
+@function divide($a, $b){
+    @return $a/$b; //if we simply say the browser doesn't know what is 30 whether it is px or % so we can write as  
+}
+margin:divide(30,2)*1px;
+
+
+
+EXTENDS:
+%btn-placeholder{
+    code that is same for 2 or any more tags
+}
+
+.btn-hot{
+    &:link{
+        @extend %btn-placeholder;
+    }
+}
+
+cd-change directory  
+clear-clear the command prompt
+ mkdir-make directory
+ 
