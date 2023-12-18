@@ -1,0 +1,26 @@
+//FLUID LAYOUT:
+allow the web page to adapt to the current viewport height or width 
+%vh,%vw is the unit instead of px for element that should be adaptive for viewport
+use max-width instead of width
+
+//RESPONSIVE UNITS:
+rem unit 
+to make it easy to scale the enthire layout down(or up)automatically
+
+//FLEXIBLE IMAGE:
+by default image dont scale automatiocally as  we change the viewport 
+so we have to use % for image dimension ,together with max-width property
+
+
+//MEDIA QUERIES:
+to change css styles on certain viewport width(called breakpoints)
+
+//LAYOUT TYPES:
+Float ,flexbox,css grid
+
+if we use max-width then the width is adjusted according to the width of the phone or lap if the width is reduced then it adjust accordingly
+10 px=1 rem;
+the trick to center the viewport is margin:0 auto;//the margin of top and bottom is 0 and left and right is auto
+//by giving auto the browser sets the margin to center of the web page
+
+//not(:last-child) it does the change for all but except the last child
