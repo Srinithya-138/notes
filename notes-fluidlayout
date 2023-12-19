@@ -21,6 +21,7 @@ Float ,flexbox,css grid
 if we use max-width then the width is adjusted according to the width of the phone or lap if the width is reduced then it adjust accordingly
 10 px=1 rem;
 the trick to center the viewport is margin:0 auto;//the margin of top and bottom is 0 and left and right is auto
-//by giving auto the browser sets the margin to center of the web page
+//by giving auto the browser sets the margin to center of the web page,this is used for centering the block level element inside the block element.
+
 
 //not(:last-child) it does the change for all but except the last child
