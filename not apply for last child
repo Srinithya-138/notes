@@ -1,0 +1,3 @@
+if we dont want to apply the padding or anything  for last element then we can do as not
+//:not(:last-child)
+filter:blur(3px) brightness(80%)//this is used to zoom out the image

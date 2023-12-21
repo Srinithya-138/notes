@@ -26,3 +26,12 @@ from:0%
 to:100%
 
 for different animation purpose we can use inbetweeen percent
+ perspective: 150rem; //we are giving this because of the rotation perspective is used for the parent and the child 
+ z-index: 20; /*to overlap the images we are using */
+backface-visibility: hidden;/*it basically hides the back part of an element 
+-webkit-background-clip:text;/*if we doesnt use this then we cannot see the text and the color we used to display the text*/
+ color: transparent;/*this is used to see the text in green color if we doesnt use this we cansee only the black color text i.e normal text)*/
+overflow:hidden;//this is used when in an box if we applies border-radius propertyand the image is placed above that we can use overflow hidden then only we can see 
+the rounded corner
+ to wrork in all the browser we have to use :-webkit-clip-path;
+ box-decoration-break:clone;
