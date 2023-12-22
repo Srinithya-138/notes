@@ -28,3 +28,6 @@ clean,modular,reusable,ready for growth are the architecturue of CSS
 
 
 When the childs are getting collapsed then we have to use the clearfix 
+//when we want an element to staty in the top always we have to use z-index:maximum value;
+
+//radial-gradient start the color from the center 
