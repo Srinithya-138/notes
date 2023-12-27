@@ -1,0 +1,8 @@
+responsive web design is about creating web sites which automatically adjust themselves to look good on all devices,from small phones to larger desktops
+bootstap is a css frame work 
+**mobile first design if we write for the mobile then it adjust for all other devices no need to write the media queries
+**reusable classes 
+**inbuild ui elements such as buttons,cards,modals
+// twitter origin developed by Mark Otto and Jacob Thornton at twttter
+//bootstarp was released as open source project on 19 th aug 2011 
+

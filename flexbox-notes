@@ -14,16 +14,16 @@ flex-direction:column
 //then it will be in top to bottom  
 
 *FLEX PROPERTIES:
-Justify-content:
+Justify-content: (movement in the //main-axis direction)
 *flex-start,flex-end,center,space-evenly
 //Justify-content:start and end says in which direction the content will be coming (basically in the main axis)
 Justify-content:space-evenly gives sapace even on all the sides 
 Justify-content:center give the content in the center of the flex box 
 //start in which direction the row or column start there will be the item (no change in the direction i>e, the first item will be in the first direction but right or left changes happens)
 
-*ALIGN CONTENT: is applied for our container 
+*ALIGN CONTENT: is applied for our container (basically foe aligning the content in the //cross axis direction)
 //it says space of the content
-//flex-wrap:wrap; wrap is one after another  
+//flex-wrap:wrap; wrap is one after another  (if we doesnt put the wrap then we the things will be overlapped and it doenot obey with the parents)
 it is used for if the content is in multiple line 
 if we use align item: center then there will be space in the wrap(i.e space after the first item)
 //align-self:alignment of individual item(its priority is higher than the align item)
@@ -32,3 +32,7 @@ if the container size is smaller than the inside item then it gets shrink
 if the container space is bigger then the flex item start to grow relative to the rest of the flex item
 //flex-grow
 align-item :center is udsed for centering the item in the cross axis direction
+flex-grow:1 means same size,and if the width is extra it takes it and if we are having 2 or three elements AND  we put flex-grow 2 then it will be 2times bigger
+
+//flex-basis is used to display in all the sceen (if we chanege the screen size then also what we given will be displayed )
+and if we give flex-basis 4 it display 4 boxes and if we change the screen size it doesnt have the space so it goes down
