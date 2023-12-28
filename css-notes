@@ -116,5 +116,5 @@ static :default position (no effect on top ,right,left,z-index property)
 position:static;
 relative it can work for top,bottom etc
 absolute works for the parent 
-fixed 
-sticky
+fixed it is always fixed if we scroll down the web page
+sticky it shrinks when we scroll down but it is always displayed as fixed 

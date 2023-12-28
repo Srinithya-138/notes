@@ -6,3 +6,80 @@ bootstap is a css frame work
 // twitter origin developed by Mark Otto and Jacob Thornton at twttter
 //bootstarp was released as open source project on 19 th aug 2011 
 
+//break points
+<576 px =x-small
+>=576px small(sm)
+>=768px medium(md)
+>=992px large(lg)
+>=1200px exrta large(xl)
+>=1400px extra extra large(xxl)//the above things will resemble the min-width (from 576px to greater for sm)
+
+//container class
+*container - it has the width based on the break points we can give like .container-lg etc..
+*container-fluid-it occupies 100% width in all view port
+
+//grid system
+in  bootstrap we can add 12 boxes(col) in bootstrap
+it has the row and col class
+container should be maintained in the row and column
+if we use col class in all divice it maintain in equal width
+if we want 2 col and one col should take 8 boxes then we can write in different size 
+col-8 and col-2
+upto some break point if we want to maintain we cangive like
+col-sm-8(upto sm it will be maintain in 8 boxes decreasing the size below sm it will takes 100% width and become stack )
+in row we can give (row row-cols-auto) it will take width based on our content 
+if we give four column but we need only total 2 col then we can write as(row row-cols-4)
+we can aslo write based on our media break points
+(row row-cols-xl-5) it says in the xl device it has 5 cols
+//vertical alignment -top and bottom
+in vertiocal alignment the default position is in the start we  can either give it in center or bottom 
+it also has break points row align-items-lg-end
+we can also align single single item using (col align-self-start)
+ if the font size is bigger then all boxes does not align evenly, there with according to the font all the boxes sholud align evenly in that case we can use  baseline it can be used in navigation bar design
+ *stretch is extending its height
+ //horizontal alignment-left and right
+ row justify-content-center
+ start,end,evenly,between
+ we can also use break points
+ row jsutify-content-lg-center
+ order is used for changing the 1,2,3 and it is from 0 to 5
+
+//margin -outer space
+we have to use m prefix for bootstrap class
+m-in all sides
+m->start(s),top(t),end(e),Bottom(b)
+//left,top,right,bottom
+margin values is from 0 to 5
+if we want top margin then we can use mt'
+mx-horizontal margin(left and right)
+my-vertical margin(top and bottom)
+0-no margin
+1-(it works in rem format 1rem=16px)16*0.25= 4 we get 4px as margin
+2-16*2*0.25=>8px
+3-16*3*.25=>16px
+4-16*4*.25=>24px
+5-16*5*.25=>48px
+we can also maintain in media break points
+m-*-5 * IS replaced with xxxl xl lg md sm and it does not have m because it is default
+
+//padding-innerspace
+use p-5 it also has from 0 to 5 and break points
+ps-1 left side has one padding
+pe- right,pt-top,pe-end,pb-bottom
+same as like margin value is from 4,8,16,24,48
+
+//border has 27 classes
+if we give simply border then it has on all sides it has value from 0 to 5
+we have to say like border border-1
+if we give border-0 then border will disappear
+we want border on all sides but we dont want on the top we can write as 
+border border-5 border-top-0
+we can use the color like primary,secondary,success,warning,info,light,dark,white like border border-5 border-primary
+we can also use opacity like border-opacity-75 upto 10% we can reduce the opacity
+
+//background-color
+bg-primary ,by giving this we can see this as background-color:blue
+we can also use the gradient by(bg-gradient) 
+we can also use the opacity(bg-opacity-75) upto 10% we change the opacity
+
+//typography
