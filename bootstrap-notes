@@ -95,7 +95,7 @@ the .blockquote class to a <blockquote> is used to quoting blocks of content fro
     <footer class="blockquote-footer">From WWF's website</footer>
   </blockquote>)
   we can create list nested and by using the cls name list-inline the list elementcan be placed in a single line
-
+   
 
 
 //tables
@@ -146,6 +146,130 @@ Alerts are created with the .alert class, followed by a contextual color classes
   </div>)
 //button 
 by using simply "btn"->it creates a basic button we can use the cls name from btn-primary to btn-light and if we want in the link type we can use (btn-btn-link)
+btn-group cls is used to create a button grp //<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+we can add the button size to btn-group cls (btn-group btn-group-lg)
+we can create vertical button using vertical class(btn-group-vertical)
+Button groups are "inline" by default, which makes them appear side by side when you have multiple groups we can create 2 div and btn-group so that we can have 2 button groups
+//nesting button groups with dropdown (<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Tablet</a></li>
+    <li><a class="dropdown-item" href="#">Smartphone</a></li>
+  </ul>)
 
 
+//Badges
+  Badges can be used as part of links or buttons to provide a counter,this badges can be used in 2 ways inside the heading and span tag
+  (<h2>Example heading <span class="badge bg-secondary">New</span></h2> and <span class="badge bg-primary">Primary</span>)we can also creATE rounded pill (<span class="badge rounded-pill bg-primary">Primary</span>)
+  Badge inside a Button(<div class="container mt-3">
+    <button type="button" class="btn btn-primary">
+      Messages <span class="badge bg-danger">4</span>
+    </button>
+    <button type="button" class="btn btn-danger">
+      Notifications <span class="badge bg-dark">7</span>
+    </button>
+  </div>) 
 
+//progress bar 
+A progress bar can be used to show how far a user is in a process,To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar
+(<div class="container mt-3">
+  <div class="progress">
+    <div class="progress-bar" style="width:70%"></div>
+  </div>
+</div>) we can create a progress bar height in the progress cls ,The height of the progress bar is 1rem (16px) by default ,we can Use the CSS height property to change the height
+(<div class="progress" style="height:20px">
+  <div class="progress-bar bg-info" style="width:50%;">50%</div>//we can also use the label(50%) to be visible 
+</div>)by default it has the bg-primary we can change the color of the progress bar inside the progress bar class
+progress bar striped we can also add the progress-bar-striped cls to creaTE  a striped progress bar (<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" style="width:40%"></div>
+</div>) //progress-bar-animated is used to animate 
+we can also create a progress bar with 3 names in single line by creating a parent progress div and 3 child div to see 
+
+
+//spinners
+To create a spinner/loader, use the .spinner-border class inside the container div tag we can use different color also like txt-primary etc.(<div class="spinner-border text-primary"></div>)
+//spinner grow is also a cls which is used to grow the spin (<div class="spinner-grow text-primary"></div>) we can reduce the spinner size by spinner-border-sm or spinner-grow-sm
+these spinners can also used in a button with or without text and while loading we can also disable the button to click (<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>// sm will show a small button 
+  Loading..
+</button>)
+(<button class="btn btn-primary" disabled>
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Loading..
+</button>)this will disable the link to touch 
+
+//pagination
+is used to say the number of states ,add the .pagination class to an <ul> element. Then add the .page-item to each <li> element and a .page-link class to each link inside <li>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    </ul>
+
+//list-group
+this is like the table ,we can link the items in the list-group ,To create a list group with linked items, use <div> instead of <ul> and <a> instead of <li>. Optionally, add the .list-group-item-action class if you want a grey background color on hover
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">First item</a>
+    <a href="#" class="list-group-item list-group-item-action">Second item</a>
+    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+  </div> we can also disable the items in this group  by replaving the action with disable
+  .list-group-flush class to remove some borders and rounded corners ,.list-group-numbered class to create list items with numbers in front of them.
+  //we can also create horizontal groups by using .list-group-horizontal class to .list-group we can also add the colors list-group-item-success by adding like this and we can also add link items with contextual 
+  classes also (<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">Action item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a></div>)
+  
+//card 
+basic card can be created by 2 div one is parent with card cls and a child with card-body cls .we can also add the card-header ,card-content,and card-footer class we can also create the color to the cards
+add the (<div class="card bg-info text-white">
+  <div class="card-body">Info card</div>
+</div>)we can also add the card-title,card-text,card-link inside the card-body tag 
+//card with image 
+<div class="card" style="width:500px">//this says the card width 
+  <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">//this with says the image width and card-image top will display the image in top 
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+
+//dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list
+.dropdown class is used to indicate a dropdown menu and dropdown-menu class to actually build the dropdown menu and To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown"
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">//this will say if we click the drop down button then it will display bs-toggle 
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+  </ul>
+</div>
+//if we havent used the drppdown-toggle class then we can see the icon 
+//we can also creATE divider in the dropdown by adding dropdown-divider inside hr tag 
+we can add droupdown-header 
+// we can also add the active ,disabled and normal items in the drop-down using <li><a class="dropdown-item" href="#">Normal</a></li>
+<li><a class="dropdown-item active" href="#">Active</a></li>
+<li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+we can add the dropdown to be like in which side we want whether left or right dropstart will show left and text-end show the button position on right 
+//vertical Button Group with dropdown can be creayed by adding btn-group-vertical to the parent div tag of the btn-group 
+
+//colapsing is Clicking on the button to toggle between showing and hiding content.
+<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demos">Simple collapsible</button>
+  <div id="demos" class="collapse" >//we have used the id name and class name to see the effect 
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  </div>  we can also create a number of collapsible boxes 
+
+  //navs 
+  we can use the nav cls inside the <ul> tag and nav-item inside the <li> class and nav-link inside the <a> tag to create a basic nav if we want to disable then we can use nav-link disabled
+ we can also create the nav to center and right by adding  nav justify-content-center and   nav justify-content-end to the ul tag 
+ we can also create the vertical nav by uaing nav flex-column inside the ul tag (<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>)
+  //navigation tabs 
