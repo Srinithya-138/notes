@@ -1,0 +1,47 @@
+ ECMA script is a specification
+ js is a programming language
+ alert is used to display a alert box in js we can use any arithmetic operation and see the output in the alert box
+ script src is used for linking js 
+ var,let,cons are variables 
+ //rules 
+ var name are case sensitive
+ keyword (resreved words) is not accepted 
+ we can use camelcase (smallName) for larger names ,
+ no space and no hypen(-) is allowed 
+ only(letters,digits,underscore is allowed _and $ is allowed)
+var is old name of naming variables
+var:variable name can be re-declared & updated .A global scope variable (in all the codes)
+let:variable name cannot be re-declared but can be updated.A block scope variable({
+    inside a block
+}) 
+const:variable name cannot be re-declared or updated.A block scope variable
+if we decalre a variable (let name) but not the value if we are trying to console.log ,we get an value undefined in js by default .But it is not used in const 
+
+//datatypes 
+primitive(7)
+number,string,boolean,undefined,null,BigInt,symbol
+non-primitive
+objects(arrays,functions) is a collection of different values
+inside the object we have the pair of (keyname:value) 
+to access the value we have 2 methods
+1)obj.keyname
+2)obj["keyname"]
+
+if we have a const object we can update the object's key
+
+//operators
+arithmetic,modulus,exponentiation
+unary operator (increment,decrement)
+comparision operators
+1) equal to (==)(it checks for value)
+2) not equal to (!=)
+to check fro data type
+1) equal to (===)
+2) not equal to (!==)
+logical oprators
+logical AND(&&)
+logical OR( ||)
+logical NOT(!)
+
+//conditional statement-to implement some condition
+
