@@ -1,0 +1,99 @@
+ ECMA script is a specification
+ js is a programming language
+ prompt is used to get the input from user Tthe prompt takes input is in tha form of string if you enrter a number also (if you get number as input the number is a string)
+ alert is used to display a alert box in js we can use any arithmetic operation and see the output in the alert box
+ script src is used for linking js 
+ var,let,cons are variables 
+ //rules 
+ var name are case sensitive
+ keyword (resreved words) is not accepted 
+ we can use camelcase (smallName) for larger names ,
+ no space and no hypen(-) is allowed 
+ only(letters,digits,underscore is allowed _and $ is allowed)
+var is old name of naming variables
+var:variable name can be re-declared & updated .A global scope variable (in all the codes)
+let:variable name cannot be re-declared but can be updated.A block scope variable({
+    inside a block
+}) 
+const:variable name cannot be re-declared or updated.A block scope variable
+if we decalre a variable (let name) but not the value if we are trying to console.log ,we get an value undefined in js by default .But it is not used in const 
+
+//datatypes 
+primitive(7)
+number,string,boolean,undefined,null,BigInt,symbol
+non-primitive
+objects(arrays,functions) is a collection of different values
+inside the object we have the pair of (keyname:value) 
+to access the value we have 2 methods
+1)obj.keyname
+2)obj["keyname"]
+
+if we have a const object we can update the object's key
+
+//operators
+arithmetic,modulus,exponentiation
+unary operator (increment,decrement)
+comparision operators
+1) equal to (==)(it checks for value)
+2) not equal to (!=)
+to check fro data type
+1) equal to (===)
+2) not equal to (!==)
+logical oprators
+logical AND(&&)
+logical OR( ||)
+logical NOT(!)
+
+//conditional statement-to implement some condition
+if statement
+if else if
+ternary //if we want to print in output we have to use the " " console .log
+
+//MDN Docs
+switch statement 
+prompt is used to store the value from user .
+
+//loops
+to execute a piece of code again and again
+for loop
+infinite loop:a loop that never ends
+while loop
+while(stopping condition)
+do{
+
+}while(condition);
+//for-of loop
+used fro strings and arrays
+for(variable name of string of array variable name){
+//this loop takes from starting value and then iterrate itself and goes to the ending value and is not used for objects
+}
+//for-in loop used frop objecrt and array
+for( variable name in objecrt name )
+
+//Strings in js
+to create a string(let str=" ")
+string lenth is(str.length)
+to access a string index(str[index value])
+//template literals in js
+a way to have embedded expression in strings(special string)
+eg:let specialString=`this is template literal` this is used for the objects
+this  is used when we want to display the string in the console box and we want that value for the object 
+to use the var name we have to use (${var name})
+**in template literal if we want a number in the output it becomes string and is not highlighted in the output (in the console box numbers are highlighted)
+//string interpolation
+to create a string by doing substitution of placeholders
+`string text ${expression} string text`//expression is embedded and its value is calculated in the run time
+${1+2+3}//6 is the output ,but this 6 is a string if we display the typeof that then we can see that
+//escape characters
+\n is used for next line
+\t -tab space
+\t is counted as single character in the string if we display the string length then we can see that
+
+//string methods
+these are built-in functions to manipulate a string 
+str.UpperCase()
+str.LowerCase()
+str.trim()//removes white spaces in the starting and end and it will not trim space in between
+strings are immutable if we use the above methods then the changes will be creatyed in the new string not in tha old
+str.slice(start,end?)//returns part of string and if we write the ending value aas 3it takes as 3-1=2 upto that only it returns
+str1.concat(str2)//joins str2 with str1
