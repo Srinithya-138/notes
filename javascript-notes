@@ -69,6 +69,11 @@ for(variable name of string of array variable name){
 }
 //for-in loop used frop objecrt and array
 for( variable name in objecrt name )
+//for each loop is a method 
+it is a loop for arrays
+syn:nameofarray.forEach(callBackFunctionname)
+here callbackfunction is a function to execute for each element in the array
+
 
 //Strings in js
 to create a string(let str=" ")
@@ -97,3 +102,44 @@ str.trim()//removes white spaces in the starting and end and it will not trim sp
 strings are immutable if we use the above methods then the changes will be creatyed in the new string not in tha old
 str.slice(start,end?)//returns part of string and if we write the ending value aas 3it takes as 3-1=2 upto that only it returns
 str1.concat(str2)//joins str2 with str1
+
+//arrays
+collection of items
+if we ask typeof then it will  output as objectsarray is a object in js
+arrays are mutable
+//looping an array 
+used for printing all items in array
+we can use for loop,for -of loop also
+//array methods
+push()-add to end
+pop()-delete from end &returns
+toString()-converts array to string but the change is not affected in the original array
+concta()-joins multiple arrays &returns array
+unshift()-used to add item in the front   
+shift()-used to delete first item in an array
+slice()-returns a piece of index [slice(startindex,endindex)]
+//it doesnot change with the original array 
+//and the end index what we given is endindex-1 index will be displayed
+splice()- change the original array (add,remove,replace)
+splice(startindex,delcount,neweel1..) 
+//del count will say how many element we wanted to be deleted with starting index if we say 0 then only that index element is deleted and we say 1 that iindex number and near index number is deleted
+//if we dont want to add neweel1 then we can close the arrray with delcount if we want then we can add with the comma
+//that new element is added to the deleted index place
+//if we say only starting index then it will return from the starting to arrindex-1 if we doen not say the delcount and neweel1
+
+//function in js
+used to perform specific task ,can be invoked whenever needed
+we have to write function defenition and function call 
+redundancy-code repetation
+in function if we say return and we try to write console.log()after thatretur statement it is not possible 
+but if we write console.log before return then it is possible 
+function parameters are local variables of function i.e this value is used only inside that {} this bracket (scope)
+
+//arrowfunctions
+is used for small work 
+variable name =()=>{
+
+}
+const functionName=(parameter1,parameter2..)=>{
+    //do some work 
+}
