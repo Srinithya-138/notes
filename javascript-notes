@@ -69,10 +69,8 @@ for(variable name of string of array variable name){
 }
 //for-in loop used frop objecrt and array
 for( variable name in objecrt name )
-//for each loop is a method 
-it is a loop for arrays
-syn:nameofarray.forEach(callBackFunctionname)
-here callbackfunction is a function to execute for each element in the array
+//for each  is a inbuild method 
+
 
 
 //Strings in js
@@ -137,9 +135,54 @@ function parameters are local variables of function i.e this value is used only 
 
 //arrowfunctions
 is used for small work 
-variable name =()=>{
+variable name =(function argument)=>{
 
 }
 const functionName=(parameter1,parameter2..)=>{
     //do some work 
 }
+//for each  is a method because we are invoking it by object-used for array to display the value or index or the entire array or used for calculation purpose
+it is a loop for arrays and not for any other things
+syn:nameofarray.forEach(callBackFunctionname)
+in the above case callbackfunction is a function to execute for each element in the array
+callback is nothing but  we are sending a function to call a function name as argument then it is known as callback function
+a callback is a function passed as an argumrnt to another function
+the parameter passed can be 3
+1)value
+2)index
+3)array
+higher order function-either take another function as a parameter inside them or they return another function as a output so for-each is a HOF
+higher order method
+
+//map method-will create a new array as a result
+create a new array with the result of some operation.The value its callback function returns are used too form a new array
+syt:arr.map(callbackfunction(val,ind,arr))
+
+//filter method-based on some condition it takes the value from index in the array and filter ccording to the condition
+if the condition is false then no value is returned in the method or stored in the method
+
+//reduce method-performs some operation & reduce the array to a single value.It returns that single value
+syn:reduce(previous value number,currentvalue number)
+reduce method starts with two value and the result will be updated and a single value will come as a output
+
+//window object
+it represent the open window in a browser.It is browser's object (not js's object)
+'and is automatically created by browser.it is global object with lots of properties and methods
+
+//DOM-Document Object Model
+console.dir- is used for using property and method
+when a web page is loaded the browser creates a document object model of the page
+ to create dynamic manipulatION (CHANGE) we are using DOM 
+
+//DOM MAnipulation
+1)selecting with id-document.getElementById("myid")
+2)selecting with class-document.getElementByClassName("myClass")
+3)Selecting with tag-document.grtElementByTagName("p")
+//query selector-return node list
+1)document.querySelector("myId/myClass/tag")//return first element
+2)document.querySelectorAll("myId/myClass/tag")//return a nodelist
+properties
+*tagName-returns tag for element node
+*innerText-returns the text content of the element and all its children
+*innerHtml-return the plain text or HTML contents in the element
+*textContent-returns textual content even for hidden elements 
