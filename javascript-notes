@@ -169,12 +169,12 @@ reduce method starts with two value and the result will be updated and a single 
 it represent the open window in a browser.It is browser's object (not js's object)
 'and is automatically created by browser.it is global object with lots of properties and methods
 
-//DOM-Document Object Model
+//DOM-Document Object Model-an interface for web document that represent their structure as a tree-like object.It allows dynamic manipulation of page content using languages like js.
 console.dir- is used for using property and method
 when a web page is loaded the browser creates a document object model of the page
- to create dynamic manipulatION (CHANGE) we are using DOM 
+ to create dynamic manipulatION (CHANGE) we are using DOM to change a p tag 
 
-//DOM MAnipulation
+//DOM MAnipulation-change a one text to another text  
 1)selecting with id-document.getElementById("myid")
 2)selecting with class-document.getElementByClassName("myClass")
 3)Selecting with tag-document.grtElementByTagName("p")
@@ -185,4 +185,11 @@ properties
 *tagName-returns tag for element node
 *innerText-returns the text content of the element and all its children
 *innerHtml-return the plain text or HTML contents in the element
-*textContent-returns textual content even for hidden elements 
+*textContent-returns textual content even for hidden elements ,it simply returns the text content inside the tag
+//by using textContent we can get the text content and also we can change the text content also 
+
+//events and event haNDlers
+// event in js is an action or occurence that happens within a web page,suh as a user`s interaction(clicking a button)or
+a page loading.
+//event handler in js is a function that responds to an event when it occurs.It listens for specific
+events and execute code to perform action based on those events,creating interactive and dynamic web applications
