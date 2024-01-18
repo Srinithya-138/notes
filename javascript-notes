@@ -188,8 +188,19 @@ properties
 *textContent-returns textual content even for hidden elements ,it simply returns the text content inside the tag
 //by using textContent we can get the text content and also we can change the text content also 
 
-//events and event haNDlers
+//events and event haNDlers are changing something with the use of button 
 // event in js is an action or occurence that happens within a web page,suh as a user`s interaction(clicking a button)or
 a page loading.
 //event handler in js is a function that responds to an event when it occurs.It listens for specific
 events and execute code to perform action based on those events,creating interactive and dynamic web applications
+//different types of events:
+onclick-user clicks an html element
+onchange-html element has been changed
+onmouseover-user moves the mouse over an html element
+onmouseout-user moves the mouse away from an html element
+onkeydown-user pushes a keyboard key
+onload-browser has finished loading the page
+
+text is inside the paragraph and heading tag but the text is not inside the input tag 
+we can get only the value for input box
+text content for p,h tag
