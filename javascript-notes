@@ -204,3 +204,18 @@ onload-browser has finished loading the page
 text is inside the paragraph and heading tag but the text is not inside the input tag 
 we can get only the value for input box
 text content for p,h tag
+
+//random number creation 
+math.random()-it gives the value of 0.0 to 0.9 random number
+if we multiple by 10 we get the value as 1.to 9. random numbers
+floor is nothing but up to down (biggest number is converted into the smallest number)
+//to create a random number we have to use'
+console.log(Math.floor((Math.random)*10))
+random number generates from 0 to 9 in the above code if we give +1 then we can get from 1 to 10
+console.log(Math.floor((Math.random)*10)+1)
+
+//DOM manipulation with css 
+bgcolor change is using :idname.style.backgroundColor="red"
+set the attribute usimg:idname.setAttribut("class","classnamewe defined")
+//when we start typing in the keyboard for the input tag the result should come down without clicking
+onkeyup="functionname()"
