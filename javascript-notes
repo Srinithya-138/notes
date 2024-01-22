@@ -1,6 +1,6 @@
  ECMA script is a specification
  js is a programming language
- prompt is used to get the input from user Tthe prompt takes input is in tha form of string if you enrter a number also (if you get number as input the number is a string)
+ prompt is used to get the input from user the prompt takes input is in tha form of string if you enrter a number also (if you get number as input the number is a string)
  alert is used to display a alert box in js we can use any arithmetic operation and see the output in the alert box
  script src is used for linking js 
  var,let,cons are variables 
@@ -217,5 +217,30 @@ console.log(Math.floor((Math.random)*10)+1)
 //DOM manipulation with css 
 bgcolor change is using :idname.style.backgroundColor="red"
 set the attribute usimg:idname.setAttribut("class","classnamewe defined")
-//when we start typing in the keyboard for the input tag the result should come down without clicking
+ 
+//when we start typing in the keyboard for the input tag the result should come down without clicking a button but by calling a function
 onkeyup="functionname()"
+
+//event object 
+function functionname(event){
+//function defennition
+}
+
+functionname(event)//calling function
+if we print the event in console.log then we can see so many function ,
+we can take the content of the button using target function inside the event
+//therefore by using (event.target.textContent) we can take the content inside the button if we pass the event when we click the button
+remove is uded to delete 
+
+//text content deal with the text content inside the tag
+//innerHtml deal with the tag and then the content of the text 
+
+Different ways of selecting element
+1)querySelector -used to select id,class and tag also ,this checks what is matching first 
+to select class .classname,to select tag tagname only and if we have two tag in the same name then 1 st one will be selected
+2)querySelectorAll-this returns a nodelist ,works as array 
+3)getElementByClassName-without dot we can put class name directly
+4)getElementById-we canput only id
+5)grtElementByTagName-we can put only tag name
+
+//how to create element->document.createElement("tag we want")
