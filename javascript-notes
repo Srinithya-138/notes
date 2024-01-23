@@ -244,3 +244,13 @@ to select class .classname,to select tag tagname only and if we have two tag in 
 5)grtElementByTagName-we can put only tag name
 
 //how to create element->document.createElement("tag we want")
+append -> after the tag
+prepend->before the tag  
+insertAdjacentElement->for thate we have to createElement("tag") and then we need to give the insertAdjacentElement in which place the element is needed to place and which element we want 
+1)beforebegin->this create h1 tag before the div tag first we have to create element  [varname.insertAdjacentElement("beforebegin",createElement var name)
+2)afterbegin->this create the element at first  inside the div tag
+3)beforeend->this create the element at the last inside the div tag 
+4)afterend->this create h1 tag after the div tag 
+listItem.innerHTML=input.value+"<button onclick='deleteItem(event)'>delete</button>"//we have to give single quotes inside the " " to differentitae or else we have to give "<button onclick=\"deleteItem(event)\">delete</button>"
+
+//deleting htmlelement->variable name.remove()
