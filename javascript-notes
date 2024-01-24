@@ -167,8 +167,9 @@ reduce method starts with two value and the result will be updated and a single 
 
 //window object
 it represent the open window in a browser.It is browser's object (not js's object)
-'and is automatically created by browser.it is global object with lots of properties and methods
-
+'and is automatically created by browser.it is global object with lots of properties and methods (prompt,alert area a part of window object)
+window->document->html
+we can access all the tags inside the html using js (when the html element comes inside the htmlelement it behaves like a object  and these special object is named as document )
 //DOM-Document Object Model-an interface for web document that represent their structure as a tree-like object.It allows dynamic manipulation of page content using languages like js.
 console.dir- is used for using property and method
 when a web page is loaded the browser creates a document object model of the page
@@ -178,7 +179,7 @@ when a web page is loaded the browser creates a document object model of the pag
 1)selecting with id-document.getElementById("myid")
 2)selecting with class-document.getElementByClassName("myClass")
 3)Selecting with tag-document.grtElementByTagName("p")
-//query selector-return node list
+//query selector-return node list->to access a class .,id-#,tag simply tag name 
 1)document.querySelector("myId/myClass/tag")//return first element
 2)document.querySelectorAll("myId/myClass/tag")//return a nodelist
 properties
@@ -187,7 +188,41 @@ properties
 *innerHtml-return the plain text or HTML contents in the element
 *textContent-returns textual content even for hidden elements ,it simply returns the text content inside the tag
 //by using textContent we can get the text content and also we can change the text content also 
+first child and last child ,children 
+there are also 3 nodes 
+text,comment,
 
+getAttribute("att name")//to get attribute value
+setAttribute("attr","value")//to set the attribute val 
+node(selected var name ).style.stylename->
+
+//textContent deal with the text content inside the tag even for hidden elements
+//innerHtml deal with the tag and then the content of the text and all its childeren
+//innerText deal with the text of the tag 
+//tagName deals with tag for element nodes 
+
+Different ways of selecting element
+1)querySelector -used to select id,class and tag also ,this checks what is matching first 
+to select class .classname,to select tag tagname only and if we have two tag in the same name then 1 st one will be selected
+2)querySelectorAll-this returns a nodelist ,works as array 
+3)getElementByClassName-without dot we can put class name directly
+4)getElementById-we canput only id
+5)grtElementByTagName-we can put only tag name
+
+//insert element 
+//how to create element->document.createElement("tag we want")
+append -> after the tag i.e last 
+prepend->before the tag  
+insertAdjacentElement->for thate we have to createElement("tag") and then we need to give the insertAdjacentElement in which place the element is needed to place and which element we want 
+1)beforebegin->this create h1 tag before the div tag first we have to create element  [varname.insertAdjacentElement("beforebegin",createElement var name)
+2)afterbegin->this create the element at first  inside the div tag
+3)beforeend->this create the element at the last inside the div tag 
+4)afterend->this create h1 tag after the div tag 
+listItem.innerHTML=input.value+"<button onclick='deleteItem(event)'>delete</button>"//we have to give single quotes inside the " " to differentitae or else we have to give "<button onclick=\"deleteItem(event)\">delete</button>"
+
+//deleting htmlelement->variable name.remove()
+ 
+change in the state of an object is known as event 
 //events and event haNDlers are changing something with the use of button 
 // event in js is an action or occurence that happens within a web page,suh as a user`s interaction(clicking a button)or
 a page loading.
@@ -232,25 +267,9 @@ we can take the content of the button using target function inside the event
 //therefore by using (event.target.textContent) we can take the content inside the button if we pass the event when we click the button
 remove is uded to delete 
 
-//text content deal with the text content inside the tag
-//innerHtml deal with the tag and then the content of the text 
 
-Different ways of selecting element
-1)querySelector -used to select id,class and tag also ,this checks what is matching first 
-to select class .classname,to select tag tagname only and if we have two tag in the same name then 1 st one will be selected
-2)querySelectorAll-this returns a nodelist ,works as array 
-3)getElementByClassName-without dot we can put class name directly
-4)getElementById-we canput only id
-5)grtElementByTagName-we can put only tag name
 
-//how to create element->document.createElement("tag we want")
-append -> after the tag
-prepend->before the tag  
-insertAdjacentElement->for thate we have to createElement("tag") and then we need to give the insertAdjacentElement in which place the element is needed to place and which element we want 
-1)beforebegin->this create h1 tag before the div tag first we have to create element  [varname.insertAdjacentElement("beforebegin",createElement var name)
-2)afterbegin->this create the element at first  inside the div tag
-3)beforeend->this create the element at the last inside the div tag 
-4)afterend->this create h1 tag after the div tag 
-listItem.innerHTML=input.value+"<button onclick='deleteItem(event)'>delete</button>"//we have to give single quotes inside the " " to differentitae or else we have to give "<button onclick=\"deleteItem(event)\">delete</button>"
-
-//deleting htmlelement->variable name.remove()
+//event lisner->this is specially used in button ,first we are selecting the element and then saying what event is happening and if the event happen then we are saying what we want to happen 
+syn:varname.addEventListener("mouseover",function(){
+    alert("Mouse over")
+})
