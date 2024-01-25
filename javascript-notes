@@ -235,6 +235,43 @@ onmouseover-user moves the mouse over an html element
 onmouseout-user moves the mouse away from an html element
 onkeydown-user pushes a keyboard key
 onload-browser has finished loading the page
+ondblclick-double clicked 
+for events we can give as inline or we can use it in js 
+//if we write both inline and js code for event js code gets priority
+//in js if we write (node.onclick) if we try to use it in js as a function it gets override and second one gets executed 
+
+
+//event object -is a special object that has details about the event
+all event handlers have access to the event object's properties and methods.
+node.event=(e)=>{
+    //handle here 
+}
+e.target,e.type,e.clientX,e.clientY
+ e.type-says what event we have used  [click]
+ e.target says foe=r which the event is happened[button tag fully is writtened]
+function functionname(event){
+//function defennition
+}
+
+functionname(event)//calling function
+if we print the event in console.log then we can see so many function ,
+we can take the content of the button using target function inside the event
+//therefore by using (event.target.textContent) we can take the content inside the button if we pass the event when we click the button
+remove is uded to delete 
+
+
+
+//event lisner->this is specially used in button ,first we are selecting the element and then saying what event is happening and if the event happen then we are saying what we want to happen 
+syn:varname.addEventListener("mouseover",function(){
+    alert("Mouse over")
+})
+syn:node.addEventListener(event,callbackfunction)
+node.removeEventLisner(event,callbackfunction)->the callback reference should be same to remove 
+
+//prototype:
+//classes:prgm or template for creating object 
+those object will have some state(variables)&some behaviour(functions)inside it
+
 
 text is inside the paragraph and heading tag but the text is not inside the input tag 
 we can get only the value for input box
@@ -256,20 +293,6 @@ set the attribute usimg:idname.setAttribut("class","classnamewe defined")
 //when we start typing in the keyboard for the input tag the result should come down without clicking a button but by calling a function
 onkeyup="functionname()"
 
-//event object 
-function functionname(event){
-//function defennition
-}
-
-functionname(event)//calling function
-if we print the event in console.log then we can see so many function ,
-we can take the content of the button using target function inside the event
-//therefore by using (event.target.textContent) we can take the content inside the button if we pass the event when we click the button
-remove is uded to delete 
-
-
-
-//event lisner->this is specially used in button ,first we are selecting the element and then saying what event is happening and if the event happen then we are saying what we want to happen 
-syn:varname.addEventListener("mouseover",function(){
-    alert("Mouse over")
-})
+//callback
+synchronous-line by line execution and each instruction wait for the previous instruction
+Asynchronous-
