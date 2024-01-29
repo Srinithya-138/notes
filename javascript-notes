@@ -293,6 +293,10 @@ set the attribute usimg:idname.setAttribut("class","classnamewe defined")
 //when we start typing in the keyboard for the input tag the result should come down without clicking a button but by calling a function
 onkeyup="functionname()"
 
+prototype is a special object inside a object and it has some properties and method
+we can set prototype as __proto__
+
+
 //callback
 synchronous-line by line execution and each instruction wait for the previous instruction
 Asynchronous-
