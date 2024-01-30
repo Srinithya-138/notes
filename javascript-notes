@@ -27,6 +27,7 @@ inside the object we have the pair of (keyname:value)
 to access the value we have 2 methods
 1)obj.keyname
 2)obj["keyname"]
+//Comparing two JavaScript objects always returns false.
 
 if we have a const object we can update the object's key
 
@@ -156,7 +157,7 @@ higher order method
 
 //map method-will create a new array as a result
 create a new array with the result of some operation.The value its callback function returns are used too form a new array
-syt:arr.map(callbackfunction(val,ind,arr))
+syt:arr.map(callbackfunction(val,ind,arr))     
 
 //filter method-based on some condition it takes the value from index in the array and filter ccording to the condition
 if the condition is false then no value is returned in the method or stored in the method
@@ -295,6 +296,9 @@ onkeyup="functionname()"
 
 prototype is a special object inside a object and it has some properties and method
 we can set prototype as __proto__
+
+classes
+super keyword is used to call the constructor of parent class to access the parent's properties and method 
 
 
 //callback
