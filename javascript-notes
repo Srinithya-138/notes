@@ -217,7 +217,7 @@ prepend->before the tag
 insertAdjacentElement->for thate we have to createElement("tag") and then we need to give the insertAdjacentElement in which place the element is needed to place and which element we want 
 1)beforebegin->this create h1 tag before the div tag first we have to create element  [varname.insertAdjacentElement("beforebegin",createElement var name)
 2)afterbegin->this create the element at first  inside the div tag
-3)beforeend->this create the element at the last inside the div tag 
+3)beforeend->this create the element at the last inside the div tag      
 4)afterend->this create h1 tag after the div tag 
 listItem.innerHTML=input.value+"<button onclick='deleteItem(event)'>delete</button>"//we have to give single quotes inside the " " to differentitae or else we have to give "<button onclick=\"deleteItem(event)\">delete</button>"
 
@@ -235,7 +235,7 @@ onchange-html element has been changed
 onmouseover-user moves the mouse over an html element
 onmouseout-user moves the mouse away from an html element
 onkeydown-user pushes a keyboard key
-onload-browser has finished loading the page
+onload-browser has finished loading the page 
 ondblclick-double clicked 
 for events we can give as inline or we can use it in js 
 //if we write both inline and js code for event js code gets priority
@@ -301,6 +301,20 @@ classes
 super keyword is used to call the constructor of parent class to access the parent's properties and method 
 
 
-//callback
+//callback - function passed as an argument to another function 
 synchronous-line by line execution and each instruction wait for the previous instruction
-Asynchronous-
+Asynchronous-due to synchronous some imp inst get blocked due to some previous inst.it execute allow to execute next instruction immediatelya dn does not block the flow 
+setTimeOut()-is a function which decides to execute a function in which time it wanted to be executed if we write 4000 then it wait for 4s and get executed but this code run parralley and next line program gets run 
+callback Hell-nested callbacks stacked below one another forming a pyramid structure.(pyramid of doom)
+ 
+//promises-to solve a problem of callback hell
+is for "eventual" completion of task .It is an object in js.It is a solution to callback hell
+let promise = new promise((resolve,reject ))
+
+map,filter and reduce are higher order function
+map is used in array used to create a new array with the old array 
+
+fetch API (Application programming Interface)-provide interface for fetching(sending/receiving) resources.It uses Request and Response objects.The fetch() method is used to fetch the resource  
+fetch API provides an interface for fetching (sending/receiving)resources.
+It uses request andresponse objects.
+the fetch() method is used to ftech a resource(data)
