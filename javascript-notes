@@ -310,6 +310,9 @@ callback Hell-nested callbacks stacked below one another forming a pyramid struc
 //promises-to solve a problem of callback hell
 is for "eventual" completion of task .It is an object in js.It is a solution to callback hell
 let promise = new promise((resolve,reject ))
+.then(here we will call a function and we can define a arrow function)-is used for success (resolve)
+.catch()is used for failure (reject)
+
 
 map,filter and reduce are higher order function
 map is used in array used to create a new array with the old array 
@@ -317,4 +320,16 @@ map is used in array used to create a new array with the old array
 fetch API (Application programming Interface)-provide interface for fetching(sending/receiving) resources.It uses Request and Response objects.The fetch() method is used to fetch the resource  
 fetch API provides an interface for fetching (sending/receiving)resources.
 It uses request andresponse objects.
-the fetch() method is used to ftech a resource(data)
+the fetch() method is used to ftech a resource(data)  
+fetch('  ')->fecth only and get request 
+fetch('  ',{
+    method:'POST',
+    headers:{'content-type':application/json'},
+    body:JSON.stringify({
+        userId:22,
+        id:456,
+        title:'test',
+        completed:false
+    })
+
+    })->inserted api to post 

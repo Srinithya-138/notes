@@ -1,0 +1,9 @@
+when a html page is loaded the browser creates a DOM like structure 
+react is a library for building user interface 
+virtual DOM model -just update the new content added(difference ) will go to the server so therre will not be slow down in the web page
+
+it has component->services->route
+one way binding 
+component can have statae which is an object and it determines how to render and behave 
+"App" or "Global" state refers to state that is available to UI 
+imported files are written as <name/> this name should be imported 
