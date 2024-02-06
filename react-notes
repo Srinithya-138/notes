@@ -7,3 +7,41 @@ one way binding
 component can have statae which is an object and it determines how to render and behave 
 "App" or "Global" state refers to state that is available to UI 
 imported files are written as <name/> this name should be imported 
+to create a new project 'npx create-react-app name'
+component first letter should be caps
+If we want to use  the react component we have to use like html tag 
+return should be html code and the returned html code should have a single html parent (singlr html tag and we can write the code inside that parent)
+react we write js and html code to write class we havr to name className 
+we can take one component and use it in another component i.e., we can reuse it 
+the browser does not understand the react code so we are using the node to convert react to html and css 
+the package.json has the package 
+to inject react code to html code we need a separate html file that html file is inside the public folder as index.html  
+<div id="root"></div> here only all the code are injected and we are displaying it in the browser 
+<>empty tag</> we can use the same component many times 
+to use inline style:
+const varname={
+    color:'red'
+}
+<div style={varname}>plant</div>
+(or)
+<div style={{color:'blue'}}>plant3</div>
+to use variable we have to put{curlybraces}and write the variable name inside the bracket
+in the component return statement we can write only the html code by default in case if we want to write js code then we can put{ }
+by creating dynamically we can use the properties to change the value,we can change the content before the return statement
+if we want to chnage the design we can use the tags to change it after the return statement
+to pass data dynamically syn: varname={'data'}
+props is used for component passing and using the passed data dynamically
+reusability is done using props 
+//object destructuring  
+const name={
+    first:'sri',
+    last:'nithya'
+  }
+const {first,last} = name ->(object destructuring)here first and last are coming from name so we are using object destructuring
+console.log(name.first,name.last,first,last,)
+key is used as unique identifier 
+render is first time we typing the code that is remebered by the react 
+if the prop changes it rerender the code 
+//state
+useState -> used to create a state 
+const [new variable name]=useStae(var default value)
