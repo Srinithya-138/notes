@@ -1,0 +1,14 @@
+flux is a design pattern -invented by fb
+By using redux we can quickly design  
+Fundamental princlple of redux:state manage able library
+1)single source of truth ->whole application is stored in a single store
+2)the state is read-only -->only way to change the state is to emit an action ,an object describing what happened
+3)changes are made with pure functions --->to specify how the state tree is transformed by actions, you write pure reducers
+
+REdux offers a solution of "storing" all your application state in one place called (store)
+Component then (dispatch) state "changes" to the store not directly to other components.
+The component that need to be aware of state changes can (subscribe)to the store
+
+The store can be thought of as a "middleman" for all state changes in the application.With redux involved,components don't communicate directly between each other ,but rather all state changes must go through the single source of truth,the store.
+
+For communication btwn 2 component that don't have parent and child relationship ,by using store we cn get the info of all the non parent child relationship.
