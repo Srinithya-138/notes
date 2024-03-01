@@ -12,3 +12,15 @@ The component that need to be aware of state changes can (subscribe)to the store
 The store can be thought of as a "middleman" for all state changes in the application.With redux involved,components don't communicate directly between each other ,but rather all state changes must go through the single source of truth,the store.
 
 For communication btwn 2 component that don't have parent and child relationship ,by using store we cn get the info of all the non parent child relationship.
+
+TERMINOLOGY:
+1)Action:create,read,update,delete are action;it is a js object and describes about the state manager in the application,They are the only source of info in the store.Action creators:Functions that take somewargument  and return an action.
+2)Reducer:it works for the action.Function that take the current state and an action and return to the new state.It specify how the application state changes in response to actions sent to the store.
+3)Store:manages the state.The heart of redux,which actually stores and guards your application state;we can subscribe to state changes in the store and dispatch actions to it.
+4)Dispatch:Modify the state
+
+REdux store methods:
+get State():return the current state of your application
+dispatch(action):Dispatches an action and is the only way to trigger a state change
+subscribe(lisner):Adds a change lisner that is called any time an action is disptached.
+replaceReducer(nextReducer):replaces the reducer that is currently used by the store to calculate the state
